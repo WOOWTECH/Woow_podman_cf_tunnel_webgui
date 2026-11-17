@@ -37,7 +37,7 @@ GUI, or link a **WOOW PaaS** subscription, and the tunnel runs. There is no Podm
 no second container, and no CLI.
 
 Since 1.2.0 the GUI has the same features as the
-[Woow Cloudflared Home Assistant add-on](https://github.com/WOOWTECH/Woow_ha_cloudflare_tunnel_webgui):
+[Woow Cloudflared Home Assistant add-on](https://github.com/WOOWTECH/Woow_ha_cf_tunnel_webgui):
 the guided PaaS link with per-route public or Access-protected review, edge-connection status, redacted logs,
 the run-parameter allow-list and the credential-file guard. What stays add-on only is what
 needs the HA Supervisor: Ingress, `external_hostname` and `nginx_proxy_manager`. Here a
@@ -90,8 +90,8 @@ Detection to recovery is roughly 1.5-2.5 minutes.
 ## Install
 
 ```bash
-git clone https://github.com/WOOWTECH/Woow_cloudflare_tunnel_webgui.git
-cd Woow_cloudflare_tunnel_webgui
+git clone https://github.com/WOOWTECH/Woow_podman_cf_tunnel_webgui.git
+cd Woow_podman_cf_tunnel_webgui
 
 scripts/install.sh          # first run: writes ~/.config/woow-cf-tunnel/woow-cf-tunnel.env
 $EDITOR ~/.config/woow-cf-tunnel/woow-cf-tunnel.env
@@ -367,7 +367,7 @@ Mutating calls need the CSRF double-submit cookie (`x-csrftoken`).
 
 ## Support
 
-- Issues: [GitHub Issues](https://github.com/WOOWTECH/Woow_cloudflare_tunnel_webgui/issues)
+- Issues: [GitHub Issues](https://github.com/WOOWTECH/Woow_podman_cf_tunnel_webgui/issues)
 - Changelog: [CHANGELOG.md](CHANGELOG.md)
 
 ## License

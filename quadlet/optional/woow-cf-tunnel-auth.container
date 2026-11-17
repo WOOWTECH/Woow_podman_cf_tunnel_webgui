@@ -14,7 +14,7 @@
 
 [Unit]
 Description=Basic-auth proxy for the Cloudflare Tunnel Web GUI (woow-cf-tunnel-auth)
-Documentation=https://github.com/WOOWTECH/Woow_cloudflare_tunnel_webgui
+Documentation=https://github.com/WOOWTECH/Woow_podman_cf_tunnel_webgui
 After=woow-cf-tunnel.service
 AssertFileNotEmpty=@@AUTH_HTPASSWD@@
 AssertFileNotEmpty=%h/.config/woow-cf-tunnel/auth-nginx.conf

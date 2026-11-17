@@ -31,12 +31,12 @@ REPO=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd -P)
 # directory" instead of saying what is wrong. ql_require_own_lineage below catches the trees
 # that DO carry a lib copy.
 [[ -r $REPO/scripts/lib/quadlet-lib.sh ]] || {
-  printf '%s: ERROR: %s\n' "${0##*/}" "no scripts/lib/quadlet-lib.sh under $REPO: this is not a checkout of WOOWTECH/Woow_cloudflare_tunnel_webgui. If it has scripts/deploy.sh you are running this from the host's pre-Quadlet deployment tree, which is not this package's lineage and is not a git repo - run from a fresh clone, and do not delete that tree: three live systemd units execute scripts from it" >&2
+  printf '%s: ERROR: %s\n' "${0##*/}" "no scripts/lib/quadlet-lib.sh under $REPO: this is not a checkout of WOOWTECH/Woow_podman_cf_tunnel_webgui. If it has scripts/deploy.sh you are running this from the host's pre-Quadlet deployment tree, which is not this package's lineage and is not a git repo - run from a fresh clone, and do not delete that tree: three live systemd units execute scripts from it" >&2
   exit 1
 }
 # shellcheck source=lib/quadlet-lib.sh
 . "$REPO/scripts/lib/quadlet-lib.sh"
-ql_require_own_lineage "$REPO" WOOWTECH/Woow_cloudflare_tunnel_webgui
+ql_require_own_lineage "$REPO" WOOWTECH/Woow_podman_cf_tunnel_webgui
 # shellcheck source=render-args.sh
 . "$REPO/scripts/render-args.sh"
 

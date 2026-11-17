@@ -18,7 +18,7 @@
 
 [Unit]
 Description=Cloudflare Tunnel Web GUI and cloudflared connector (woow-cf-tunnel)
-Documentation=https://github.com/WOOWTECH/Woow_cloudflare_tunnel_webgui
+Documentation=https://github.com/WOOWTECH/Woow_podman_cf_tunnel_webgui
 # Never give up restarting: this unit may be the only remote route to the host.
 StartLimitIntervalSec=0
 

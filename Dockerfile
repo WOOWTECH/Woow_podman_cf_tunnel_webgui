@@ -62,7 +62,7 @@ ENV PYTHONUNBUFFERED=1
 EXPOSE 8000
 VOLUME ["/data"]
 
-LABEL org.opencontainers.image.source="https://github.com/WOOWTECH/Woow_cloudflare_tunnel_webgui" \
+LABEL org.opencontainers.image.source="https://github.com/WOOWTECH/Woow_podman_cf_tunnel_webgui" \
       org.opencontainers.image.title="woow-cf-tunnel" \
       org.opencontainers.image.description="Cloudflare Tunnel Web GUI with a supervised cloudflared connector"
 
