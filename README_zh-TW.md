@@ -35,7 +35,7 @@
 貼上 tunnel token、在介面上登入 Cloudflare，或連結 **WOOW PaaS** 訂閱，隧道就會運作。
 不需要 Podman socket、不需要第二個容器，也不需要下指令。
 
-從 1.2.0 起，功能與 [Woow Cloudflared Home Assistant add-on](https://github.com/WOOWTECH/Woow_ha_cloudflare_tunnel_webgui)
+從 1.2.0 起，功能與 [Woow Cloudflared Home Assistant add-on](https://github.com/WOOWTECH/Woow_ha_cf_tunnel_webgui)
 一致：PaaS 引導連結（逐條路由檢查公開或 Access 保護模式）、邊緣連線狀態、日誌遮罩、run parameter 白名單，
 以及憑證檔權限防護。需要 HA Supervisor 的功能只在 add-on 提供，包括 Ingress、`external_hostname`
 與 `nginx_proxy_manager`；在這裡改用路由或 catch-all 即可達到相同效果。
@@ -83,8 +83,8 @@ podman 就會殺掉容器（`HealthOnFailure=kill`），`Restart=always` 再把�
 ## 安裝
 
 ```bash
-git clone https://github.com/WOOWTECH/Woow_cloudflare_tunnel_webgui.git
-cd Woow_cloudflare_tunnel_webgui
+git clone https://github.com/WOOWTECH/Woow_podman_cf_tunnel_webgui.git
+cd Woow_podman_cf_tunnel_webgui
 
 scripts/install.sh          # 第一次執行：建立 ~/.config/woow-cf-tunnel/woow-cf-tunnel.env
 $EDITOR ~/.config/woow-cf-tunnel/woow-cf-tunnel.env
@@ -303,7 +303,7 @@ tests/smoke.sh             # 針對實際安裝
 
 ## 支援
 
-- 問題回報：[GitHub Issues](https://github.com/WOOWTECH/Woow_cloudflare_tunnel_webgui/issues)
+- 問題回報：[GitHub Issues](https://github.com/WOOWTECH/Woow_podman_cf_tunnel_webgui/issues)
 - 變更紀錄：[CHANGELOG.md](CHANGELOG.md)
 
 ## 授權

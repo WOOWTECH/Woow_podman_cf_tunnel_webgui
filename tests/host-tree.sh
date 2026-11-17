@@ -311,7 +311,7 @@ t_staged_unit_hardcodes_loopback() {
 # ---- lineage ------------------------------------------------------------------------------
 t_lineage_accepts_this_repo() {
   load
-  ql_require_own_lineage "$REPO" WOOWTECH/Woow_cloudflare_tunnel_webgui \
+  ql_require_own_lineage "$REPO" WOOWTECH/Woow_podman_cf_tunnel_webgui \
     || die_t "this checkout must pass its own lineage check"
 }
 
